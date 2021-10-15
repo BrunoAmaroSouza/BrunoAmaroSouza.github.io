@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicio</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome:">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <label for="sobrenome:">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+        <br><br>
+        <label for="nascimento">Nascimento</label>
+        <input type="text" name="nascimento" placeholder="dd" id="nascimento" size="1" maxlength="2">
+        <input type="text" name="nascimento" placeholder="mm" id="nascimento" size="1" maxlength="2">
+        <input type="text" name="nascimento" placeholder="aaaa" id="nascimento" size="2" maxlength="4">
+        <br><br>
+        <label for="rg:">RG:</label>
+        <input type="text" name="rg" id="rg">
+        <br><br>
+        <label for="cpf:">CPF:</label>
+        <input type="text" name="cpf" id="cpf" size="4" maxlength="9"> -
+        <input type="text" name="cpf" id="cpf" size="1" maxlength="2">
+        <br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend> Dados de Endereço </legend>
+        <label for="rua:">Rua:</label>
+        <input type="text" name="rua" id="rua">
+        <label for="numero">Numero:</label>
+        <input type="text" name="numero" id="numero" size="2">
+        <br><br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" name="Bairro" id="bairro">
+        <br><br>
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" name="estado" list="estado"/>
+        <datalist id="estado">
+          <option value="Campos"></option>
+        </datalist>
+        <br><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade">
+        <br><br>
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" size="4"> -
+        <input type="text" name="cep" id="cep" size="2">
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados de Login</legend>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email">
+        <br><br>
+        <label for="file">Imagem de perfil:</label>
+        <input type="file" name="file" id="file" placeholder="Escolher arquivo">
+        <br><br>
+        <label for="login_de_usuario">Login de usuário:</label>
+        <input type="text" name="login_de_usuario" id="login_de_usuario">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" name="senha" id="senha">
+        <br><br>
+        <label for="confirme_senha">Confirme a senha:</label>
+        <input type="text" name="confirme_senha" id="confirme_senha">
+      </fieldset>
+
+      <fieldset>
+        <legend>Pesquisa de Intersse:</legend>
+        <label for="webmaster"> Você deseja trabalar como Webmaster</label><br>
+        <input type="radio" name="webmaster" value="sim"/>Sim<br>
+        <input type="radio" name="webmaster" value="nao"/>Não<br>
+        <input type="radio" name="webmaster" value="talve"/>Talvez<br>
+        <input type="radio" name="webmaster" value="quem_sabe"/>Quem sabe
+        <br><br>
+        <label for="aprender"> O que você deseja apender?</label><br>
+        <input type="checkbox" name="apender">HTML<br>
+        <input type="checkbox" name="apender">CSS<br>
+        <input type="checkbox" name="apender">JavaScript<br>
+        <input type="checkbox" name="apender">Django
+        <br><br>
+        <label for="comentario">Deixe seu comentário:</label><br>
+        <textarea name="comentario" rows="8" cols="80"></textarea>
+      </fieldset>
+
+      <input type="submit" name="Enviar" value="Enviar">
+      <input type="reset" name="Limpar" value="Limpar">
+
+    </form>
+  </body>
+</html>
